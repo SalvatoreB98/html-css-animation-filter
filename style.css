@@ -97,6 +97,23 @@
         transform: rotate(360deg);
     }
 }
+.ex-11-icon {
+    font-size: 60px;
+}
+.ex-11-icon:hover{
+    animation: animLoading2 2s ease-in-out;
+}
+@keyframes animLoading2{
+    0%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 
 .ex-11-icon {
     font-size: 60px;
@@ -122,6 +139,20 @@
     width: 60px;
     height: 20px;
 }
+.ex-12-button:hover .ex-12-top-white{
+    animation: slidingTop 2s linear alternate;
+}
+@keyframes slidingTop{
+    0%{
+        left: 10%;    
+    }
+    50%{
+        left: 69%;
+    }
+    100%{
+        left: 10%;
+    }
+}
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -130,3 +161,19 @@
     width: 60px;
     height: 20px;
 }
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: slidingBottom 2s linear alternate;
+}
+
+@keyframes slidingBottom{
+    0%{
+        right: 20%;    
+    }
+    50%{
+        right: 69%;
+    }
+    100%{
+        right: 20%;   
+    }
+}
+
