@@ -149,9 +149,6 @@
     50%{
         left: 69%;
     }
-    100%{
-        left: 10%;
-    }
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -172,8 +169,73 @@
     50%{
         right: 69%;
     }
+}
+.ex-13-button:hover .ex-13-top-white{
+    animation: rotateTopSlider 2s linear;
+}
+/* ROTATE */
+@keyframes rotateTopSlider{
+    /* horizontal */
+    0%{
+        left: 0;
+        top: -10px;
+    }
+    20%{
+        left: 80%;
+        top: -10px;
+
+    }
+    /* vertical */
+    40%{
+        left: 80%;
+        top: 100%;
+    }
+    /* horizontal reverse */
+    60%{
+        left: 0;
+        top: 100%;
+    }
+    /* vertical towards top */
+    80%{
+        left: -15px;
+        top: -10px;
+    }
     100%{
-        right: 20%;   
+        left: 0;
+        top: -10px;
     }
 }
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: rotateBottomSlider 2s linear forwards;
+}
+@keyframes rotateBottomSlider{
+    /* horizontal */
+    0%{
+        bottom: -10px;
+        right: 20%;
+    }
+    20%{
+        bottom: -10px;
+        right: 75%;
 
+    }
+    /* vertical */
+    40%{
+        bottom: 100%;
+        right: 75%;
+    }
+    /* horizontal reverse */
+    60%{
+        right: -15px;
+        bottom: 100%;
+    }
+    /* vertical towards top */
+    80%{
+        right: -15px;
+        bottom: -10px;
+    }
+    100%{
+        bottom: -10px;
+        right: 20%;
+    }
+}
