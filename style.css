@@ -177,8 +177,8 @@
 @keyframes rotateTopSlider{
     /* horizontal */
     0%{
-        left: 0;
         top: -10px;
+        left: 10%;
     }
     20%{
         left: 80%;
@@ -201,8 +201,8 @@
         top: -10px;
     }
     100%{
-        left: 0;
         top: -10px;
+        left: 10%;
     }
 }
 .ex-13-button:hover .ex-13-bottom-white{
